@@ -1,4 +1,11 @@
 # rp2040-freertos-template
-This is a template project for developing FreeRTOS based applications on Raspberry Pi RP2040 based boards. This template uses the "official" RP2040 port from the Raspberry Pi Foundation. My previous repo used the generic Cortex M0 port so this one corrects that. Previous Repo retained as tutorials rely on it. 
+This is a template project for developing FreeRTOS based applications on Raspberry Pi RP2040 based boards. This template uses the "official" RP2040 port from the Raspberry Pi Foundation. 
 
-Unmodified, this project will spawn a single task to rapidly blink the LED on and off.
+This project is based on the original [LearnEmbeddedSystems/rp2040-freertos-template](https://github.com/LearnEmbeddedSystems/rp2040-freertos-template.git) repository, licensed under the MIT License.
+
+## Upcoming Exercises
+
+In future updates, this project will include various FreeRTOS exercises, such as:
+- Task management
+- Inter-task communication
+- Synchronization and timers
