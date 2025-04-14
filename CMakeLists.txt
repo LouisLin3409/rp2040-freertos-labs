@@ -16,8 +16,14 @@ project(${ProjectName})
 # Initialize the Raspberry Pi Pico SDK
 pico_sdk_init()
 
+# Select Project Folder
+if(NOT DEFINED ACTIVE_PROJECT)
+    message(FATAL_ERROR "Please define ACTIVE_PROJECT using -DACTIVE_PROJECT=<project_name>")
+endif()
+set(ACTIVE_PROJECT "project" CACHE STRING "Which project to build in src/")
+
 # Add subdirectories
-add_subdirectory(src)
+add_subdirectory(src/${ACTIVE_PROJECT})
 
 # if you have anything in "lib" folder then uncomment below - remember to add a CMakeLists.txt
 # file to the "lib" directory
